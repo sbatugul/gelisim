@@ -11,7 +11,6 @@ interface BranchCardProps {
 const BranchCard = ({ branch }: BranchCardProps) => {
   const router = useRouter();
   const handleClick = () => {
-    // Set URL parameters
     router.push(`/home?branch=${branch.id}`);
   };
   return (
