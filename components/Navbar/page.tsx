@@ -3,6 +3,7 @@ import NavbarButton from "./NavbarButton/page";
 import navbarData from "../../app/lib/navbar-data";
 
 const lexend = Lexend({ subsets: ["latin"] });
+
 const NavBar = () => {
   return (
     <div
@@ -12,7 +13,13 @@ const NavBar = () => {
         <div>LOGO</div>
         <div className="flex flex-row gap-5 font-medium">
           {navbarData.map((buttonData, i) => {
-            return <NavbarButton key={i} buttonData={buttonData} />;
+            return (
+              <NavbarButton
+                key={i}
+                id={buttonData.id}
+                title={buttonData.title}
+              />
+            );
           })}
         </div>
       </div>

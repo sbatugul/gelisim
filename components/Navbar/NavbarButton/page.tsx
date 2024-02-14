@@ -1,13 +1,12 @@
 "use client";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
 interface NavbarButtonProps {
-  buttonData: {
-    id: string;
-    title: string;
-  };
+  id: string;
+  title: string;
 }
 
-const NavbarButton = ({ buttonData }: NavbarButtonProps) => {
+const NavbarButton = ({ id, title }: NavbarButtonProps) => {
   const pathname = usePathname().split("/").pop();
   const branch = useSearchParams().get("branch");
   const router = useRouter();
@@ -16,12 +15,12 @@ const NavbarButton = ({ buttonData }: NavbarButtonProps) => {
   };
   return (
     <button
-      onClick={() => handleClick(buttonData.id)}
+      onClick={() => handleClick(id)}
       className={`hover:text-indigo-800 ${
-        pathname === buttonData.id && "underline underline-offset-8"
+        pathname === id && "underline underline-offset-8"
       }`}
     >
-      {buttonData.title}
+      {title}
     </button>
   );
 };
