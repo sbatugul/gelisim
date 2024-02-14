@@ -1,4 +1,5 @@
 import NavBar from "../Navbar/page";
+import Footer from "../Footer/page";
 
 export default function PageWrapper({
   children,
@@ -8,7 +9,8 @@ export default function PageWrapper({
   return (
     <main>
       <NavBar />
-      {children}
+      <div className="min-h-dvh">{children}</div>
+      <Footer />
     </main>
   );
 }
