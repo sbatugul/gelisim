@@ -8,7 +8,7 @@ export default function PageWrapper({
   return (
     <main>
       <NavBar />
-      <div className="min-h-dvh">{children}</div>
+      <div className="min-h-dvh px-4 lg:px-64 mt-16 ">{children}</div>
     </main>
   );
 }

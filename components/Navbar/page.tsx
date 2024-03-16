@@ -7,9 +7,9 @@ const lexend = Lexend({ subsets: ["latin"] });
 const NavBar = () => {
   return (
     <div
-      className={`w-full h-20 bg-white shadow-xl flex flex-row items-center ${lexend.className}`}
+      className={` h-20 bg-white shadow-xl flex flex-row items-center ${lexend.className} px-4 lg:px-64  `}
     >
-      <div className="flex flex-row justify-between w-full m-96">
+      <div className="flex flex-row justify-between w-full">
         <div>LOGO</div>
         <div className="flex flex-row gap-5 font-medium">
           {navbarData.map((buttonData, i) => {

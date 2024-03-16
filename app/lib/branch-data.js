@@ -1,3 +1,5 @@
+import educationData from "@/app/lib/education-data";
+
 const branch = [
   {
     id: "turgutlu",
@@ -5,21 +7,11 @@ const branch = [
     insta: "https://www.instagram.com/hizligelisimturgutlu",
     facebook: "https://www.facebook.com/hizligelisim",
     educations: [
-      {
-        name: "Otizm Spektrum Bozukluğu Programı",
-      },
-      {
-        name: "Zihinsel Yetersizlik Programı",
-      },
-      {
-        name: "Bedensel Yetersizlik Programı ",
-      },
-      {
-        name: "Öğrenme Güçlüğü Programı ",
-      },
-      {
-        name: "İşitme Yetersizliği Programı ",
-      },
+      educationData[0],
+      educationData[1],
+      educationData[2],
+      educationData[3],
+      educationData[4],
     ],
   },
   {
@@ -28,24 +20,12 @@ const branch = [
     insta: "https://www.instagram.com/hizligelisim",
     facebook: "https://www.facebook.com/hizligelisim",
     educations: [
-      {
-        name: "Otizm Spektrum Bozukluğu Programı",
-      },
-      {
-        name: "Dil ve Konuşma Bozukluğu Programı",
-      },
-      {
-        name: "Zihinsel Yetersizlik Programı",
-      },
-      {
-        name: "Bedensel Yetersizlik Programı ",
-      },
-      {
-        name: "Öğrenme Güçlüğü Programı ",
-      },
-      {
-        name: "İşitme Yetersizliği  Programı ",
-      },
+      educationData[5],
+      educationData[0],
+      educationData[1],
+      educationData[2],
+      educationData[3],
+      educationData[4],
     ],
   },
 ];
